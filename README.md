@@ -1,11 +1,20 @@
 # CSV parser
 
-I have used Python3.6
+Written code with Python3.6
 
 ### Unit test
 Run unit test via
 ```
 >>>python test.py -v
+test_csv_read_data_property_postcode (__main__.CSVTest) ... ok
+test_csv_read_data_property_price (__main__.CSVTest) ... ok
+test_for_average_diff_between_house_vs_flat (__main__.CSVTest) ... ok
+test_for_top_ten_most_expensive_properties (__main__.CSVTest) ... ok
+test_property_mean_value_for_postcode_outward (__main__.CSVTest) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.025s
+
 ```
 
 ### Running Code  

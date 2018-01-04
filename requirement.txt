@@ -1,0 +1,2 @@
+certifi==2017.1.23
+virtualenv==15.1.0

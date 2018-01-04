@@ -37,6 +37,7 @@ class CSVTest(unittest.TestCase):
         Test for meanvalue check
         """
         mean_value = self.properties.get_mean_value_for_postcode_outward(self.properties.read_data(), 'W1F')
+        self.assertIsNotNone(mean_value)
         self.assertEqual(mean_value, 1158750)
 
     def test_for_top_ten_most_expensive_properties(self):
@@ -45,6 +46,7 @@ class CSVTest(unittest.TestCase):
         :return: 
         """
         properties = self.properties.top_ten_expensive_properties(self.properties.read_data())
+        self.assertIsNotNone(properties)
         self.assertEqual(len(properties), 2)
 
 
@@ -54,7 +56,7 @@ class CSVTest(unittest.TestCase):
         :return:
         """
         avg_price = self.properties.average_between_house_vs_flat(self.properties.read_data())
-        self.assertEqual(isinstance(avg_price, float), 1)
+        self.assertEqual(isinstance(avg_price, float), True)
                           
 
 if __name__ == '__main__':
